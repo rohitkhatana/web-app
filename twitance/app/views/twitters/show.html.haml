@@ -1,0 +1,25 @@
+%p
+	%strong Handle
+	%br
+	= @tweet.handle
+%p
+	%strong Tweet
+	%br
+	= @tweet.tweet
+
+	%br
+	%hr
+	%strong From elasticsearch all data
+	%br
+	- @sea.each do |t|
+		%b handle 
+		%br
+		= t.handle
+		%br
+		= t.tweet
+		%br
+	%br
+	%a{:href => "/facets"} facets count
+	
+
+%br

@@ -1,7 +1,7 @@
 Twitance::Application.routes.draw do
   #resources is the collection of similar object 
   resources :twitters  
-
+  match 'facets' => 'twitters#facets'
   #match 'twitter/new' => 'twitters#new'
   # The priority is based upon order of creation:
   # first created -> highest priority.
