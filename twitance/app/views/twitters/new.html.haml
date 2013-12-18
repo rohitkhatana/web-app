@@ -1,0 +1,11 @@
+= form_for :tweet, url: twitters_path do |f|
+  %p
+    = f.label :handle
+    %br
+      = f.text_field :handle
+  %p
+    = f.label :tweet
+    %br
+      = f.text_area :tweet
+  %p
+    = f.submit 
