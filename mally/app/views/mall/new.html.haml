@@ -1,0 +1,14 @@
+%html
+ %body
+  = form_for :mall, url: mall_path do |f|
+   %p
+    = f.label :name
+    %br
+     = f.text_field :name
+   %p
+    = f.label :city
+   %br
+    = f.text_area :city
+   %p
+    = f.submit 
+  

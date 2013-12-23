@@ -1,0 +1,8 @@
+!!!
+%html
+ %body
+  Mally
+  - @mall.each do |m|
+   %strong= m.name
+  Mall ,We have reached
+  %a{:href => 'mall/new'} new
